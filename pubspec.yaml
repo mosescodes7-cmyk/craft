@@ -1,0 +1,40 @@
+name: craft_order_tracker
+description: Craft Order Tracker - records craft orders, deposits and balances.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  shared_preferences: ^2.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  device_preview: ^1.2.0
+  flutter_launcher_icons: ^0.13.1
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/logo.jpg
+
+
+# Flutter Launcher Icons Configuration
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/logo.jpg"
+  min_sdk_android: 21
+  web:
+    generate: true
+    image_path: "assets/logo.jpg"
+  windows:
+    generate: true
+    image_path: "assets/logo.jpg"
+  macos:
+    generate: true
+    image_path: "assets/logo.jpg"
